@@ -118,7 +118,9 @@ button,
 input {
 	overflow: visible
 }
-
+.mb-20{
+	margin-bottom: 20px;
+}
 button,
 select {
 	text-transform: none
@@ -1466,7 +1468,6 @@ h1 {
 .services {
 	background-size: cover;
 	overflow: hidden;
-	margin-bottom: 60px
 }
 
 .wrap_services {
@@ -1725,7 +1726,54 @@ h1 {
 	color: #ffd800;
 	-webkit-text-stroke: 1px red
 }
-
+.stock_buy-btn {
+    text-align: center;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 
+		-0   -3px 0   #000000,
+		 0   -3px 0   #000000,
+		-0    3px 0   #000000,
+		 0    3px 0   #000000,
+		-3px -0   0   #000000,
+		 3px -0   0   #000000,
+		-3px  0   0   #000000,
+		 3px  0   0   #000000,
+		-1px -3px 0   #000000,
+		 1px -3px 0   #000000,
+		-1px  3px 0   #000000,
+		 1px  3px 0   #000000,
+		-3px -1px 0   #000000,
+		 3px -1px 0   #000000,
+		-3px  1px 0   #000000,
+		 3px  1px 0   #000000,
+		-2px -3px 0   #000000,
+		 2px -3px 0   #000000,
+		-2px  3px 0   #000000,
+		 2px  3px 0   #000000,
+		-3px -2px 0   #000000,
+		 3px -2px 0   #000000,
+		-3px  2px 0   #000000,
+		 3px  2px 0   #000000,
+		-3px -3px 0   #000000,
+		 3px -3px 0   #000000,
+		-3px  3px 0   #000000,
+		 3px  3px 0   #000000,
+		-3px -3px 0   #000000,
+		 3px -3px 0   #000000,
+		-3px  3px 0   #000000,
+		 3px  3px 0   #000000;
+    font-size: 27px;
+    line-height: 34px;
+		position: relative;
+		background-image: url(../img/stocks_buy-bg.png);
+		width: 270px;
+		height: 71px;
+		box-shadow: 1px 8px 0px 1px #000;
+    border-radius: 8px;
+		margin-top: 20px;
+}
 .catalog_repair {
 	padding: 0;
 	background: url(../img/bg-catalog-repair.png) no-repeat;
@@ -1824,10 +1872,14 @@ h1 {
 	text-align: center
 }
 
-.item_advantages img {
+.item_advantages img, .about-title {
 	display: block;
 	max-width: 100%;
 	margin: 0 auto
+}
+.about-title{
+	position: relative;
+	bottom: 45px;
 }
 
 .item_advantages span {
@@ -2317,18 +2369,15 @@ footer {
 }
 
 .sale {
-	background: url(../img/bg-sale.png) 0 0/cover no-repeat;
-	padding: 35px 0 50px
+	background: url(../img/stocks-bg.png) center/cover no-repeat;
+	height: 730px;
 }
 
-.sale h2 {
-	font-size: 72px;
-	line-height: 72px;
-	text-align: center;
-	color: #fb1313;
-	-webkit-text-stroke: 3px #ffd800;
-	letter-spacing: 3px;
-	margin-bottom: 35px
+.stocks-text{
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	bottom: 20px;
 }
 
 .wrap_sale {
@@ -2340,37 +2389,68 @@ footer {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	max-width: 1128px;
 	margin: 0 auto
 }
 
 .item_sale {
-	width: 31%;
-	max-width: 310px
+	max-width: 270px;
+	width: 100%;
 }
 
 .item_sale img {
 	display: block;
 	max-width: 100%;
-	margin-bottom: 10px;
+	height: 217px;
+	margin-bottom: 25px;
 	-webkit-box-shadow: 0 0 10px 3px #000;
-	box-shadow: 0 0 10px 3px #000
+	box-shadow: 0 3px 15px 10px #000
 }
 
 .item_sale .price_catalog {
-	font-size: 33px;
+	font-size: 21px;
 	text-align: center;
+	color: #FFD623;
+	text-shadow: 
+		-0   -2px 0   #FF0000,
+		 0   -2px 0   #FF0000,
+		-0    2px 0   #FF0000,
+		 0    2px 0   #FF0000,
+		-2px -0   0   #FF0000,
+		 2px -0   0   #FF0000,
+		-2px  0   0   #FF0000,
+		 2px  0   0   #FF0000,
+		-1px -2px 0   #FF0000,
+		 1px -2px 0   #FF0000,
+		-1px  2px 0   #FF0000,
+		 1px  2px 0   #FF0000,
+		-2px -1px 0   #FF0000,
+		 2px -1px 0   #FF0000,
+		-2px  1px 0   #FF0000,
+		 2px  1px 0   #FF0000,
+		-2px -2px 0   #FF0000,
+		 2px -2px 0   #FF0000,
+		-2px  2px 0   #FF0000,
+		 2px  2px 0   #FF0000,
+		-2px -2px 0   #FF0000,
+		 2px -2px 0   #FF0000,
+		-2px  2px 0   #FF0000,
+		 2px  2px 0   #FF0000;
 	-webkit-text-stroke: 0
 }
-
+.item_sale .price_catalog span{
+	font-size: 35px;
+}
 .old_price {
 	font-family: 'Century Gothic', sans-serif;
-	font-size: 33px;
-	line-height: 33px;
+	font-size: 29px;
+	line-height: 27px;
 	position: relative;
-	display: inline-block
+	display: inline-block;
+	margin-top: 3px;
 }
-
+.price_sale{
+	margin-left: 20px;
+}
 .old_price::after {
 	content: '';
 	width: 100%;
@@ -2382,15 +2462,14 @@ footer {
 }
 
 .title_sale {
-	font-size: 23px;
-	line-height: 26px;
+	font-size: 21px;
+	line-height: 23px;
 	color: #fff;
 	text-align: center;
-	text-shadow: 0 5px 5px rgba(0, 0, 0, .5)
+	text-shadow: 0 5px 3px rgb(0, 0, 0)
 }
 
 .about_main {
-	padding: 52px 0 0;
 	background: url(../img/bg-about-main.png) center 475px no-repeat
 }
 
@@ -2405,9 +2484,13 @@ footer {
 }
 
 .about_main .text_about {
-	font-family: UniSansHeavyCAPS, sans-serif;
+	font-family: Impact, sans-serif;
 	font-style: italic;
-	font-size: 36px
+	font-size: 36px;
+	text-shadow: 2px 6px 4px #000;
+}
+.text_about span{
+	color: #fff600;
 }
 
 .advan_about {
@@ -2421,8 +2504,7 @@ footer {
 }
 
 .item_advan {
-	width: 25%;
-	padding: 0 25px
+	width: 14.2%;
 }
 
 .item_advan img {
@@ -2430,55 +2512,8 @@ footer {
 }
 
 .item_advan span {
-	font-size: 29px;
-	line-height: 32px
-}
-
-.item_advan:nth-child(1) {
-	-webkit-box-ordinal-group: 2;
-	-ms-flex-order: 1;
-	order: 1
-}
-
-.item_advan:nth-child(2) {
-	-webkit-box-ordinal-group: 3;
-	-ms-flex-order: 2;
-	order: 2;
-	margin-top: 70px
-}
-
-.item_advan:nth-child(3) {
-	-webkit-box-ordinal-group: 4;
-	-ms-flex-order: 3;
-	order: 3;
-	margin-top: 160px
-}
-
-.item_advan:nth-child(4) {
-	-webkit-box-ordinal-group: 5;
-	-ms-flex-order: 4;
-	order: 4;
-	margin-top: 270px
-}
-
-.item_advan:nth-child(5) {
-	-webkit-box-ordinal-group: 8;
-	-ms-flex-order: 7;
-	order: 7;
-	margin-top: -80px
-}
-
-.item_advan:nth-child(6) {
-	-webkit-box-ordinal-group: 7;
-	-ms-flex-order: 6;
-	order: 6
-}
-
-.item_advan:nth-child(7) {
-	-webkit-box-ordinal-group: 6;
-	-ms-flex-order: 5;
-	order: 5;
-	margin-top: 50px
+	font-size: 18.4px;
+	line-height: 20px
 }
 
 .video_about img {
