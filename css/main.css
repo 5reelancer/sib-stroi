@@ -2088,7 +2088,8 @@ footer {
 }
 
 .services_main {
-	margin: 0
+  position: relative;
+  top: -110px;
 }
 
 .services_main .wrapper {
@@ -2209,9 +2210,9 @@ footer {
 .carousel_services .slick-arrow {
 	width: 132px;
 	height: 110px;
-	top: 290px;
+	top: 440px;
 	margin: 0;
-	z-index: 50
+	z-index: 50;
 }
 
 .carousel_services .slick-arrow::before {
