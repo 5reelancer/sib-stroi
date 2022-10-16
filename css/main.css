@@ -1195,6 +1195,7 @@ h1 {
 	align-items: center;
 	justify-content: space-between;
 	height: max-content;
+	flex-wrap: wrap;
 }
 .topheader-construction-text{
 	text-align: right;
@@ -2062,6 +2063,7 @@ h1 {
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 35px;
+	max-width: 100%;
 }
 
 .portfolio .wrapper {
