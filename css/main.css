@@ -2671,6 +2671,11 @@ footer {
   line-height: 83px;
   text-align: center;
   padding: 40px 10px;
+  opacity: 0;
+}
+
+.carousel_preview.slider-nav.slick-initialized.slick-slider.slick-dotted button {
+  opacity: 1;
 }
 
 .item_serv .btn_serv {
@@ -2735,6 +2740,11 @@ footer {
   top: 440px;
   margin: 0;
   z-index: 50;
+}
+
+button.slick-prev.slick-arrow,
+button.slick-next.slick-arrow {
+  opacity: 0;
 }
 
 .carousel_services .slick-arrow::before {
@@ -5072,4 +5082,8 @@ footer {
 @supports (-webkit-appearance:none) {
 
 }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6f1bac5d6df457552c768a8e286b11e9866777c7
